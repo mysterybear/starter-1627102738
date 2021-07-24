@@ -8,15 +8,9 @@ type Props = PropsWithChildren<{
 
 const PageLayout = ({ children, title }: Props) => {
   return (
-    <div
-      style={{
-        padding: 24,
-        fontFamily: "system-ui, sans-serif",
-        lineHeight: 1.5,
-      }}
-    >
+    <div className="p-6 font-sans leading-6">
       <Navigation />
-      <div style={{ maxWidth: 510 }}>
+      <div className="max-w-lg">
         <h1>{title}</h1>
         {children}
       </div>

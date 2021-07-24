@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl"
 import { useRouter } from "next/router"
-import Link from "next/link"
+import Link from "./Link"
 
 const Navigation = () => {
   const t = useTranslations("Navigation")
@@ -8,14 +8,10 @@ const Navigation = () => {
   const otherLocale = locales?.find((cur) => cur !== locale)
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <div style={{ display: "flex", gap: 10 }}>
-        <Link href="/">
-          <a>{t("index")}</a>
-        </Link>
-        <Link href="/about">
-          <a>{t("about")}</a>
-        </Link>
+    <div className="flex justify-between">
+      <div className="flex gap-2">
+        <Link href="/">{t("index")}</Link>
+        <Link href="/about">{t("about")}</Link>
       </div>
       {otherLocale && (
         <Link href={route} locale={otherLocale}>
