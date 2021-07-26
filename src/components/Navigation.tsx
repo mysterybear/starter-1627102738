@@ -15,7 +15,7 @@ const Navigation = () => {
       </div>
       {otherLocale && (
         <Link href={route} locale={otherLocale}>
-          <a>{t("switchLocale", { locale: otherLocale })}</a>
+          {t("switchLocale", { locale: otherLocale })}
         </Link>
       )}
     </div>
