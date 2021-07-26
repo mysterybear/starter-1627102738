@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "clsx": "^1.1.1",
+    "js-yaml-loader": "^1.2.2",
     "next": "latest",
     "next-intl": "1.0.1",
     "react": "^17.0.2",

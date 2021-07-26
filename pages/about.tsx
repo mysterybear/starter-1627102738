@@ -8,8 +8,8 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       messages: {
-        ...require(`../messages/shared/${locale}.json`),
-        ...require(`../messages/about/${locale}.json`),
+        ...require(`../messages/shared/${locale}.yaml`),
+        ...require(`../messages/about/${locale}.yaml`),
       },
       now: new Date().getTime(),
     },
