@@ -4,7 +4,7 @@ import { AppPropsType } from "next/dist/next-server/lib/utils"
 import { Fragment } from "react"
 import "tailwindcss/tailwind.css"
 import SEO from "../next-seo.config"
-import { i18n } from "../next.config"
+import i18n from "../i18n.json"
 
 function MyApp({ Component, pageProps }: AppPropsType) {
   return (
