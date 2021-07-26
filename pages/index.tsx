@@ -24,6 +24,7 @@ export default function Home() {
       <p>
         {t("description", {
           locale,
+          b: (children) => <b>{children}</b>,
           code: (children) => <Code>{children}</Code>,
         })}
       </p>

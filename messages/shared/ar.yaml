@@ -1,5 +1,5 @@
 Navigation:
-  index: Home
-  about: About
+  index: يبدأ
+  about: حول
   switchLocale: |
     {locale, select, ar {عربى} en {English} other {}}

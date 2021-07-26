@@ -1,0 +1,8 @@
+About:
+  title: حول
+  description:
+    تستخدم هذه الصفحة رسائل من <code> ./messages/about/{locale}.json </code> و
+    <code> ./messages/shared/{locale}.json </code>. لا يتم تحميل الرسائل من صفحة
+    البداية والإعدادات المحلية الأخرى.
+  lastUpdated:
+    تم تحديث هذا المثال {lastUpdatedRelative} ({lastUpdated, date, short}).
